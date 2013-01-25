@@ -4,9 +4,9 @@ A non-blocking, HTML-based confirm/alert/prompt replacement. There is currently 
 
 ## General Usage
 
-cap.confirm(settingsObject);
-cap.alert(settingsObject);
-cap.prompt(settingsObject);
+    cap.confirm(settingsObject);
+    cap.alert(settingsObject);
+    cap.prompt(settingsObject);
 
 ## Confirm Usage
 
