@@ -91,6 +91,6 @@ An object with the following values:
 * element - a reference to the confirm box (div)
 * blanket - a reference to the blanket element
 
-## Licence
+## License
 
 WTFPL
