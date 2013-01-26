@@ -1,6 +1,6 @@
 # CAP
 
-A non-blocking, HTML-based confirm/alert/prompt replacement. There is currently no default stylesheet. Do it your own damn self.
+A non-blocking, HTML-based confirm/alert/prompt replacement.
 
 ## General Usage
 
@@ -86,7 +86,6 @@ An object with the following values:
 * element - a reference to the confirm box (div)
 * blanket - a reference to the blanket element
 
-## To-Do
+## Licence
 
-* Default stylesheet
-* Demo
+WTFPL

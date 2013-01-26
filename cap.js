@@ -1,3 +1,9 @@
+/*
+    CAP - Non-blocking HTML replacement for confirm/alert/prompt
+
+    Author: Ryan Kinal
+    License: WTFPL
+*/
 var cap = (function() {
     var blanket = document.getElementById('blanket'),
         cap = {},
