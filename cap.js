@@ -296,9 +296,14 @@ var cap = (function() {
         {
             settings = {
                 content: settings,
-                onConfirm: onConfirm,
-                onCancel: onCancel
+                onConfirm: onConfirm
             };
+
+            if (typeof onCancel === 'function')
+            {
+                settings.onCancel = onCancel;
+                settings.allowCancel = true;
+            }
         }
         else if (typeof settings === 'undefined')
         {
