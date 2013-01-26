@@ -28,13 +28,13 @@
     });
 
     promptButton.addEventListener('click', function(e) {
-        cap.prompt({
-            content: 'What is your favorite number?',
-            onConfirm: function(e, data) {
+        cap.prompt(
+            'What is your favorite number?',
+            function(e, data) {
                 var d = document.createElement('div');
                 d.appendChild(document.createTextNode('I like ' + data + ' too'));
                 output.appendChild(d);
             }
-        });
+        );
     });
 })();

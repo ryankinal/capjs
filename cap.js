@@ -290,9 +290,20 @@ var cap = (function() {
             - element - a reference to the alert DOM element
             - blanket - a reference to the blanket element
     */
-    cap.prompt = function(settings)
+    cap.prompt = function(settings, onConfirm, onCancel)
     {
-        settings = settings || {};
+        if (typeof settings === 'string')
+        {
+            settings = {
+                content: settings,
+                onConfirm: onConfirm,
+                onCancel: onCancel
+            };
+        }
+        else if (typeof settings === 'undefined')
+        {
+            settings = {};
+        }
 
         var box = document.createElement('div'),
             input = document.createElement(settings.input || 'input'),
