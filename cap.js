@@ -183,9 +183,19 @@ var cap = (function() {
             - element - a reference to the alert DOM element
             - blanket - a reference to the blanket element
     */
-    cap.alert = function(settings)
+    cap.alert = function(settings, onConfirm)
     {
-        settings = settings || {};
+        if (typeof settings === 'string')
+        {
+            settings = {
+                content: settings,
+                onConfirm: onConfirm
+            };
+        }
+        else if (typeof settings === 'undefined')
+        {
+            settings = {};
+        }
 
         var box = document.createElement('div'),
             content,

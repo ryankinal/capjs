@@ -17,14 +17,14 @@
     });
 
     alertButton.addEventListener('click', function(e) {
-        cap.alert({
-            content: 'This is an alert',
-            onConfirm: function() {
+        cap.alert(
+            'This is an alert',
+            function() {
                 var d = document.createElement('div');
                 d.appendChild(document.createTextNode('Alert box confirmed'));
                 output.appendChild(d);
             }
-        });
+        );
     });
 
     promptButton.addEventListener('click', function(e) {
