@@ -5,8 +5,13 @@ A non-blocking, HTML-based confirm/alert/prompt replacement.
 ## General Usage
 
     cap.confirm(settingsObject);
+    cap.confirm('message', onConfirm, onCancel);
+
     cap.alert(settingsObject);
+    cap.alert('message', onConfirm);
+
     cap.prompt(settingsObject);
+    cap.prompt('message', onConfirm, onCancel);
 
 ## Confirm Usage
 
