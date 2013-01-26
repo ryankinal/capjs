@@ -71,9 +71,20 @@ var cap = (function() {
             - element - a reference to the confirm box (div)
             - blanket - a reference to the blanket element
     */
-    cap.confirm = function(settings)
+    cap.confirm = function(settings, onConfirm, onCancel)
     {
-        settings = settings || {};
+        if (typeof settings === 'string')
+        {
+            settings = {
+                message: settings,
+                onConfirm: onConfirm,
+                onCancel: onCancel
+            };
+        }
+        else if (typeof settings === 'undefined')
+        {
+            settings = {};
+        }
 
         var box = document.createElement('div'),
             okay = document.createElement('input'),

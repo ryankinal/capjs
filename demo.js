@@ -5,21 +5,15 @@
         output = document.getElementById('output');
 
     confirmButton.addEventListener('click', function(e) {
-        cap.confirm({
-            message: 'Pretty cool, right?',
-            onConfirm: function() {
+        cap.confirm(
+            'Pretty cool, right?',
+            function() {
                 var d = document.createElement('div');
 
                 d.appendChild(document.createTextNode('Glad you like it!'));
                 output.appendChild(d);
-            },
-            onCancel: function() {
-                var d = document.createElement('div');
-
-                d.appendChild(document.createTextNode('Wrong answer ;-)'));
-                output.appendChild(d);
             }
-        })
+        );
     });
 
     alertButton.addEventListener('click', function(e) {
