@@ -12,6 +12,12 @@
 
                 d.appendChild(document.createTextNode('Glad you like it!'));
                 output.appendChild(d);
+            },
+            function() {
+                var d = document.createElement('div');
+
+                d.appendChild(document.createTextNode('Wrong answer ;-)'));
+                output.appendChild(d);
             }
         );
     });
