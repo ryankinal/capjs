@@ -2,6 +2,8 @@
 
 A non-blocking, HTML-based confirm/alert/prompt replacement.
 
+[Here's a quick-and-diry demo](http://ryankinal.github.io/capjs/)
+
 ## General Usage
 
     cap.confirm(settingsObject);
