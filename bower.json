@@ -14,5 +14,11 @@
     "alert",
     "prompt"
   ],
+  "ignore": [
+    "cap.css",
+    "demo.js",
+    "index.html",
+    "README.md"
+  ],
   "license": "WTFPL"
 }
