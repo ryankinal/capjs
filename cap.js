@@ -4,7 +4,7 @@
     Author: Ryan Kinal
     License: WTFPL
 */
-var cap = (function() {
+window.cap = (function() {
     var blanket = document.getElementById('blanket'),
         cap = {},
         current,
